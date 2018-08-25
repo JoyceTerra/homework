@@ -1,12 +1,12 @@
+import { MAKE_GUESS, NEW_GAME } from '../actions/game'
 
-import { MAKE_GUESS } from '../actions/game'
-import { NEW_GUESS } from '../actions/game'
-
-
-export default (state = 'hello', action = {}) => {
+export default (state = {}, action = {}) => {
   switch(action.type) {
     case NEW_GAME:
-    return[...state, action.payload]
+    return{
+      word: [action.payload],
+      guesses: []
+    }
     case MAKE_GUESS:
       return [action.payload]
     default:
@@ -21,4 +21,3 @@ export default (state = 'hello', action = {}) => {
 
 
 
-//he reducers should not modify the state. The functions should create copies of objects and arrays before changing them. They should be pure functions.

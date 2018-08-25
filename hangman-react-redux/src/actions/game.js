@@ -1,13 +1,10 @@
 export const MAKE_GUESS = 'MAKE_GUESS'
 export const NEW_GAME = 'NEW_GAME'
 
-
-
-
-export function newGame() {
+export function newGame(word) {
     return {
         type: NEW_GAME,
-        payload: [] //because new game should be empty
+        payload: word 
     }
 }
 
