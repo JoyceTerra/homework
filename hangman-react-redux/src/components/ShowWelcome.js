@@ -6,7 +6,7 @@ export default function WelcomeDisplay() {
   return (
     <div>
       <h1>Start playing</h1>
-        <Link to={ `/hangman`}><button>PLAY</button></Link>
+        <Link to={ `/hangman` }><button>PLAY</button></Link>
     </div>
   )
 }

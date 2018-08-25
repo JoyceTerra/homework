@@ -12,8 +12,8 @@ class App extends Component {
     return (
       <Provider store={ store }>
         <div className="App">
-          <Route exact path="/" component={ WelcomeContainer } />
-          <Route  path="/hangman" component={ GameContainer } />
+          <Route exact path="/" component = { WelcomeContainer } />
+          <Route  path="/hangman" component = { GameContainer } />
         </div>
       </Provider>
     );

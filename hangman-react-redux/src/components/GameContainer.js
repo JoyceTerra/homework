@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
-import{ newGame } from '../actions/game'
+import { newGame } from '../actions/game'
 import { randomWord } from '../lib/game'
 
 class GameContainer extends React.PureComponent{
@@ -12,12 +12,16 @@ class GameContainer extends React.PureComponent{
       }
       render(){
           return (
+              <div>
               <h1>Game Container</h1>
+          
+              </div>
           )
       }
 }
 
 const mapStateToProps = (state) => {
+    //console.log(state)
     return{
         game: state.game
     }
